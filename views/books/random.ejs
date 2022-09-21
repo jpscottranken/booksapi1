@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number</title>
+</head>
+<body>
+
+  <!-- Generate and display a 
+       random # between 1 - 100 -->
+       <h1> Random Number: <%= rand %></h1>
+       <% if (rand % 2 === 0) { %>
+         <h2><%= rand %> is an even number!
+        <% }
+        else { %>
+         <h2><%= rand %> is an odd number!
+       <% } %>
+</body>
+</html>
+
+<!--
+  GET Requests:
+  localhost:2345/books    Display all books
+  localhost:2345/books:id Display a single book
+
+  POST Request:
+  localhost:2345/books    Create a new book
+
+  PATCH Request:
+  localhost:2345/books:id Update (partially) a single book
+
+  DELETE Request:
+  localhost:2345/books:id Delete a single book
+
+-->
